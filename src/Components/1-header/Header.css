@@ -1,0 +1,138 @@
+header.dflex {
+
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+
+header.dflex nav {
+    background-color: var(--bgheader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px var(--title);
+}
+
+header ul.dflex {
+    gap: 16px;
+}
+
+header ul li a {
+    color: var(--title);
+    opacity: 0.4;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: 0.9rem;
+}
+
+header button {
+    height: 1.2rem;
+}
+
+/*overlay---------------------------------*/
+
+header .fixed {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(40, 40, 48, 0.91);
+    z-index: 11;
+    backdrop-filter: blur(4px);
+}
+
+header .fixed ul.modal {
+    width: 85%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+    animation: skalable 0.5s linear;
+}
+
+@keyframes skalable {
+    0% {
+        scale: 0;
+    }
+    50% {
+        scale: 1.1;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+header .fixed ul.modal li {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+header .fixed ul.modal li:first-child {
+    text-align: right;
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+    margin-bottom: -2rem;
+}
+
+header .fixed ul.modal li:last-child {
+    border-bottom: none;
+}
+
+header .fixed ul.modal li a {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 730px) {
+    header button:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    header.dflex nav {
+        display: none;
+    }
+}
+
+header .icon-close {
+    font-size: 1.2rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+
+header .icon-close:hover {
+    font-size: 1.6rem;
+    color: var(--subtitle);
+    color: crimson;
+    rotate: 180deg;
+}
+
+
+header .icon-list2,
+header button.mode {
+    background-color: var(--bgheader);
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    color: var(--subtitle);
+    transition: 0.3s;
+    box-shadow: 1px 1px 20px var(--subtitle);
+}
+
+.icon-sun {
+    color: #FDB813;
+}
+
+header .icon-list2:hover,
+header button.mode:hover {
+    border: 1px solid salmon;
+    color: var(--title);
+}
+/*--------------------------------------- change mood*/
+

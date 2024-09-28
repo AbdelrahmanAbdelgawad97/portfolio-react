@@ -1,0 +1,68 @@
+section.hero {
+    margin-top: 3rem;
+}
+
+/*--------------left setion--------------*/
+section.hero .leftSection {
+    flex-grow: 1;
+}
+
+/*--------------avatar--------------*/
+
+section.hero .leftSection .parent-avatar img {
+    width: 300px;
+    border: 3px solid #B0D3E9;
+    border-radius: 50%;
+    padding: 3px;
+    box-shadow: 1px 1px 40px rgba(203, 200, 200, 0.586) inset;
+    margin-right: -50px;
+}
+
+section.hero .leftSection .icon-verified_user {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+section.hero .leftSection h1.title {
+    color: var(--title);
+    font-size: 2.85rem;
+    line-height: 4rem;
+    margin: 24px 0;
+}
+
+section.hero .leftSection p.sub-title {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-bottom: 32px;
+}
+
+section.hero .leftSection .all-icones  {
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--subtitle);
+}
+
+section.hero .leftSection .all-icones a {
+    font-size: 1.2rem;
+    color: var(--subtitle);
+}
+
+section.hero .leftSection .all-icones .icon {
+    transition: 0.3s;
+}
+
+section.hero .leftSection .all-icones .icon:hover {
+    gap: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--icone-color);
+    cursor: pointer;
+}
+
+/* ----------------------------- animation */
+
+@media (max-width: 830px) {
+    .animation {
+        display: none;
+    }
+}

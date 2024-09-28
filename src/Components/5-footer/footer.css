@@ -1,0 +1,31 @@
+footer.dflex {
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+footer.dflex ul {
+    gap: 1rem;
+}
+
+footer.dflex ul li a {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+}
+
+footer.dflex ul li a:hover {
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer.dflex p {
+    color: var(--subtitle);
+}
+
+@media (max-width: 800px) {
+    footer.dflex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}

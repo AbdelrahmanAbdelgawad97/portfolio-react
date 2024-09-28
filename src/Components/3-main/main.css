@@ -1,0 +1,147 @@
+
+/*----------------------------main*/
+main.dflex {
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (max-width: 730px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+/*=-============================================ left part*/
+
+main section.left-section {
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 730px) {
+    main section.left-section {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+main section.left-section button {
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+main section.left-section button:hover {
+    opacity: 1;
+    border: 1px solid var(--blue);
+    padding: 0.8rem;
+}
+
+main section.left-section button.active {
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem;
+    border: 1px solid var(--blue);
+}
+
+.light main section.left-section button.active,
+.light main section.left-section button:hover {
+    border: 1px solid #000;
+}
+
+/*=-============================================ right part*/
+
+main section.right-section {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 2rem;
+    justify-content: center;
+}
+
+main section.right-section article {
+    min-height: 300px;
+}
+
+.card {
+    box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.2), 2px -2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: 0.3s;
+    border-radius: 6px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+    );
+}
+
+.card:hover {
+    border: 1px solid var(--blue);
+    rotate: 2deg;
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.card .box {
+    padding: 1rem 0.4rem;
+}
+
+.light .card,
+.light .card:hover {
+    border: none;
+}
+
+.light .card:hover {
+    background-color: rgba(246, 246, 246);
+}
+
+.card .box .title {
+    color: var(--title);
+
+}
+
+.card .box .sub-title {
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin: 0.7rem 0 1.2rem 0;
+    line-height: 1.2rem;
+}
+
+.card .box .icones {
+    justify-content: space-between;
+}
+
+.card .box .icones a {
+    color: var(--subtitle);
+}
+
+.card .box .icones > div {
+    gap: 11px;
+}
+
+.card .box .icones div div:first-child,
+.card .box .icones div div:nth-child(2) {
+    color: var(--subtitle);
+    font-size: 1.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card .box .icones div div:first-child:hover,
+.card .box .icones div div:nth-child(2):hover {
+    color: var(--icone-color);
+    font-size: 1.3rem;
+}
+
+.card .box .icones > a {
+    color: var(--blue);
+    font-size: 0.9rem;
+    margin-right: 12px;
+}
