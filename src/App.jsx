@@ -4,7 +4,7 @@ import HeroSection from './Components/2-heroSection/HeroSection'
 import Main from './Components/3-main/Main'
 import ContactUs from './Components/4-contactUs/ContactUs'
 import Footer from './Components/5-footer/Footer'
-
+import Progress from 'Components/6-progress/Progress'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -24,6 +24,8 @@ function App() {
     <div id="up" className='container'>
       <Header />
       <HeroSection />
+      <div className='divider' />
+      <Progress />
       <div className='divider' />
       <Main />
       <div className='divider' />
